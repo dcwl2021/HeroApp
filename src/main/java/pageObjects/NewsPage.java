@@ -1,7 +1,6 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
 
 public class NewsPage extends BattlePage {
-
+//For News page specific items
 }

@@ -33,6 +33,10 @@ public class CovidPageActions {
             driver.findElement(covidPage.busLink).click();
         } else if (battleName.toLowerCase().equals("news")) {
             driver.findElement(covidPage.newsLink).click();
+        } else if (battleName.toLowerCase().equals("restaurant")) {
+            driver.findElement(covidPage.restaurantLink).click();
+        } else if (battleName.toLowerCase().equals("office")) {
+            driver.findElement(covidPage.officeLink).click();
         }
     }
 

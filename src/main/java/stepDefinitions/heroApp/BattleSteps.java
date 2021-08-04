@@ -13,11 +13,7 @@ public class BattleSteps {
     @When("^I start battle with (.*)$")
     public void enterBattle(String game) {
         covidPageActions.enterBattle(game);
-    }
-
-    @And("^I start game on bus$")
-    public void startBattle() {
-        battlePageActions.startBattleBus();
+        battlePageActions.startBattle();
     }
 
 
