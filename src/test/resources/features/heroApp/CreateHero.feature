@@ -1,5 +1,5 @@
 @ui
-Feature: Create warrior
+Feature: UI - Create warrior
 
   @smoke @heroapp @warrior
   Scenario Outline: TC01 - Add new warrior

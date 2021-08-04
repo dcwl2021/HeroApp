@@ -11,7 +11,7 @@ public class DefectReporter {
 
         try {
             FileWriter fw = new FileWriter("DEFECT.md", true);
-            fw.write("\n######Failure test : " + testCase + " - [" + new Date() + "]");
+            fw.write("\n###### Failure test : " + testCase + " - [" + new Date() + "]");
             fw.close();
             System.out.println("Defect reported");
         } catch (IOException e) {

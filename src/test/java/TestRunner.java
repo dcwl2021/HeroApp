@@ -10,7 +10,6 @@ import io.cucumber.testng.CucumberOptions;
         "json:target/cucumber-reports/cucumber.json"},
         monochrome = true,
         tags = "@smoke"
-        //tags = "@dc"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 }

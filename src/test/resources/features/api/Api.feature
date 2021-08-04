@@ -1,5 +1,5 @@
 @api
-Feature: Create warrior
+Feature: API - Create warrior
 
   @smoke
   Scenario Outline: API_TC01 - Get warrior details
@@ -19,5 +19,5 @@ Feature: Create warrior
     Then I verify api response for <message>
 
     Examples:
-      | name      | score | message |
-      | SuperStar | 10    | success |
+      | name | score | message |
+      | Cleo | 10    | success |

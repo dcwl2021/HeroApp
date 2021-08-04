@@ -2,6 +2,7 @@ package actions.heroApp;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import pageObjects.BattlePage;
 import pageObjects.BusPage;
 import utils.SeleniumDriver;
 
@@ -10,14 +11,15 @@ import java.util.List;
 public class BattlePageActions {
     WebDriver driver;
     BusPage busPage = new BusPage();
+    BattlePage battlePage = new BattlePage();
 
     public BattlePageActions() {
         driver = SeleniumDriver.getDriver();
     }
 
 
-    public void startBattleBus() {
-        driver.findElement(busPage.startButton).click();
+    public void startBattle() {
+        driver.findElement(battlePage.startButton).click();
     }
 
 

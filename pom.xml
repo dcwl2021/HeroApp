@@ -3,33 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>HeroApp</groupId>
     <artifactId>HeroApp</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <dependencies>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-api</artifactId>
             <version>3.141.59</version>
         </dependency>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
             <version>3.141.59</version>
         </dependency>
-
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -45,9 +38,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
             <version>6.10.4</version>
-            <!--            <scope>test</scope>-->
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
@@ -55,14 +46,11 @@
             <version>7.4.0</version>
             <scope>test</scope>
         </dependency>
-
-
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>maven-cucumber-reporting</artifactId>
             <version>5.5.0</version>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -75,15 +63,6 @@
             <version>7.4.0</version>
             <scope>compile</scope>
         </dependency>
-
-
-        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-        <!--        <dependency>-->
-        <!--            <groupId>io.rest-assured</groupId>-->
-        <!--            <artifactId>rest-assured</artifactId>-->
-        <!--            <version>4.4.0</version>-->
-        <!--            <scope>test</scope>-->
-        <!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -108,8 +87,12 @@
             <artifactId>json-simple</artifactId>
             <version>1.1</version>
         </dependency>
-
-
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>3.141.59</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -124,15 +107,15 @@
                         <goals>
                             <goal>generate</goal>
                         </goals>
-                        <configuration>
-                            <projectName>Sample-Cucumber-Test</projectName>
-                            <skip>false</skip>
-                            <outputDirectory>target/my-reports</outputDirectory>
-                            <inputDirectory>target/cucumber-reports</inputDirectory>
-                            <jsonFiles>
-                                <param>**/*.json</param>
-                            </jsonFiles>
-                        </configuration>
+                        <!--                        <configuration>-->
+                        <!--                            <projectName>Sample-Cucumber-Test</projectName>-->
+                        <!--                            <skip>false</skip>-->
+                        <!--                            <outputDirectory>target/my-reports</outputDirectory>-->
+                        <!--                            <inputDirectory>target/cucumber-reports</inputDirectory>-->
+                        <!--                            <jsonFiles>-->
+                        <!--                                <param>**/*.json</param>-->
+                        <!--                            </jsonFiles>-->
+                        <!--                        </configuration>-->
                     </execution>
                 </executions>
             </plugin>
